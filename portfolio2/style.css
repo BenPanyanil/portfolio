@@ -82,16 +82,31 @@ body, html {
 .lander .hoverMe {
   height: 120px;
   width: 120px;
-  border-radius: 50%;
-  background-color: #5BC5C7;
   position: absolute;
   right: 12vw;
   top: 12vh;
 }
 
+.lander .hoverMe .hoverMe-area {
+  width: 100%;
+  height: 100%;
+}
+
+.lander .hoverMe .hoverMe-area .hoverMe-ball {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #5BC5C7;
+}
+
 .lander .hoverMe #hoverOverMe {
   position: relative;
-  top: 93%;
+  top: -12px;
   color: #332009;
   font-weight: bold;
   font-size: 18px;

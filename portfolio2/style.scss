@@ -92,16 +92,30 @@ body, html {
     .hoverMe {
         height: 120px;
         width: 120px;
-        border-radius: 50%;
-        background-color: $turquoise;
 
         position: absolute;
         right: 12vw;
         top: 12vh;
 
+        .hoverMe-area {
+            width: 100%;
+            height: 100%;
+            
+            .hoverMe-ball {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+                background-color: $turquoise;
+            }
+        }
+
         #hoverOverMe {
             position: relative;
-            top: 93%;
+            top: -12px;
             color: $dark-brown;
             font-weight: bold;
             font-size: 18px;
