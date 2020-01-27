@@ -4,7 +4,6 @@ $dark-brown: #332009;
 $turquoise: #5BC5C7;
 $black: #2B2929;
 $light-black: rgba(43, 41, 41, 0.8);
-$grey: #e8eaeb;
 
 
 
@@ -65,8 +64,8 @@ body, html {
     transform: rotate(-90deg);
 
     position: fixed;
-    top: 65%;
-    left: -120px;
+    top: 68%;
+    left: -130px;
 
     font-size: 0.9rem;
 }
@@ -94,8 +93,9 @@ body, html {
         width: 120px;
 
         position: absolute;
-        right: 12vw;
-        top: 12vh;
+        right: 11vw;
+        top: 18vh;
+        transform: translate(-50%, -50%);
 
         .hoverMe-area {
             width: 100%;
@@ -197,7 +197,7 @@ body, html {
     text-align: center;
     max-width: 1300px;
     justify-content: space-between;
-    margin: 0 auto 140px auto;
+    margin: 0 auto 180px auto;
 
     h3 {
         color: $light-black;
@@ -217,7 +217,7 @@ body, html {
 .workSkills-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 440px;
+    padding-bottom: 290px;
 
     .headers {
         display: flex;
@@ -294,34 +294,63 @@ body, html {
     }
 }
 
-.about-me {
+.showcase-container {
+    background-color: white;
+    padding-bottom: 320px;
 
-    width: 100%;
-    background-color: $grey;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    .showcase-container {
-        margin-left: 43%;
+        color: $dark-brown;
+        width: 240px;
+        margin: 0 auto;
+        padding: 240px 0 0 0;
 
-        .showcase-grid-container {
-            display: inline-grid;
-            grid-template-columns: 21vw 21vw;
-            grid-gap: 20px; 
 
-            transform: translateY(-65px);
+        h1 {
+            font-weight: normal;
+        }
 
-            padding-bottom: 250px;
+        .ball {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: #D3B0D9;
+        }
+    }
 
-            .showcase {
-                width: 21vw;  
-                padding: 9px 0;
-            }
+    h2 {
+        margin: 30px 0 120px 0;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+        width: 40vw;
+        text-align: center;
+        margin: 60px auto 100px auto;
+        color: $dark-brown;
+    }
+
+
+    .showcase-flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        width: 65vw;
+        margin: 0 auto;
+
+        img {
+            height: 18vw;
+            width: 21vw;
+            background-position: center;
         }
     }
 
 }
 
 .projects-header {
-    background-color: $grey;
+    background-color: white;
     text-align: center;
     color: $dark-brown;
 
@@ -337,5 +366,183 @@ body, html {
     h1 {
         font-weight: normal;
         font-size: 2.8rem;
+    }
+}
+
+
+.project-1, .scroll-draw-container {
+    background-color: white;
+    height: 140vh;
+    width: 100%;
+}
+
+
+.testimonials {
+    background-color: $light-beige;
+    width: 100%;
+
+    text-align: center;
+    color: $black;
+
+    padding: 120px 0 300px 0;
+
+    p {
+        margin: 30px 0;
+        font-weight: 500;
+    }
+
+    .line {
+        width: 68vw;
+        height: 1px;
+        background-color: $black;
+        opacity: 0.3;
+        margin: 60px auto 30px auto;
+    }
+
+    .swiper-container {
+        width: 68vw;
+
+        .swiper-slide {
+
+            .flexbox {
+                display: flex;
+                width: 100%;
+                padding-bottom: 180px;
+                justify-content: space-evenly;
+
+                .content {
+                    text-align: start;
+                    width: 45%;
+                    
+                    h4 {
+                        letter-spacing: 0.5px;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        font-style: italic;
+                        letter-spacing: 0.5px;
+                        line-height: 1.8rem;
+                    }
+
+                    .content-header {
+                        display: flex;
+                        align-items: center;
+
+                        .header-ball {
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 45px;
+                            margin-right: 25px;
+                        }
+
+                        .hb1 {
+                            background-color: #D3B0D9;
+                        }
+                        
+                        .hb2 {
+                            background-color: #ED9E5C;
+                        }
+                        
+                        .hb3 {
+                            background-color: $turquoise;
+                        }
+                        
+                        .hb4 {
+                            background-color: #D3B0D9;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $turquoise;
+        }
+    }
+}
+
+
+.footer {
+    background-color: #886791;
+    width: 100%;
+    height: 670px;
+
+    color: white;
+
+    .footerCard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 70vw;
+        height: 260px;
+        border-radius: 15px;
+        background-color: $black;
+
+        margin: 0 auto;
+        transform: translateY(-30%);
+
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+
+        h1 {
+            font-size: 46px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 30px;
+            font-weight: medium;
+        }
+
+        .contact-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 3px solid $turquoise;
+            width: 241px;
+            height: 58px;
+            border-radius: 58px;
+
+            font-weight: bold;
+            font-size: 16px;
+
+            cursor: pointer;
+
+            transition-duration: 200ms;
+        }
+
+        .contact-btn:hover {
+            background-color: $turquoise;
+        }
+
+    
+
+    }
+
+    h2 {
+        text-align: center;
+        color: $black;
+        font-size: 24px;
+        font-style: italic;
+        padding: 40px 0;
+    }
+
+    .some-links {
+        display: flex;
+        justify-content: space-between;
+        width: 135px;
+        color: $black;
+        display: flex;
+        margin: 30px auto;
+    }
+    .copyright {
+        color: $black;
+        text-align: center;
+        font-weight: 500;
     }
 }
