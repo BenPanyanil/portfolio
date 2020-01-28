@@ -196,6 +196,11 @@ body, html {
   margin: 0 auto 180px auto;
 }
 
+.keySkills-container img {
+  width: 140px;
+  margin-bottom: 40px;
+}
+
 .keySkills-container h3 {
   color: rgba(43, 41, 41, 0.8);
   font-weight: 900;
