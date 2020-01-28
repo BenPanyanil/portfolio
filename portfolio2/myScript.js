@@ -2,8 +2,6 @@
 const circleType = new CircleType(document.getElementById('hoverOverMe'));
 circleType.radius(98).dir(-1);
 
-/*inertial scrolling*/
-
 
 /*animate hoverme-ball on hover*/
 $(document).ready(function(){
@@ -19,6 +17,7 @@ $(document).ready(function(){
     );
 });
 
+
 /*Nav fade in on Y position*/
 $(document).scroll(function() {
     var y = $(this).scrollTop();
@@ -32,3 +31,6 @@ $(document).scroll(function() {
         $('.nav-fixed').fadeOut();
     }
 });
+
+
+/*Project line opening svg draw on scroll*/

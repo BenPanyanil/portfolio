@@ -175,7 +175,7 @@ body, html {
         color: $dark-brown;
         width: 270px;
         margin: 0 auto;
-        padding: 220px 0 140px 0;
+        padding: 220px 0 40px 0;
 
 
         h1 {
@@ -197,11 +197,37 @@ body, html {
     text-align: center;
     max-width: 1300px;
     justify-content: space-between;
-    margin: 0 auto 180px auto;
+    margin: 0 auto 240px auto;
 
-    img {
-        width: 140px;
-        margin-bottom: 40px;
+    .img-container {
+        width: 120px;
+        height: 200px;
+        position: relative;
+        margin: 0 auto 60px auto;
+    }
+
+    .img1 {
+        width: 84px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .img2 {
+        width: 86px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .img3 {
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 
@@ -223,7 +249,7 @@ body, html {
 .workSkills-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 290px;
+    padding-bottom: 280px;
 
     .headers {
         display: flex;
@@ -265,13 +291,14 @@ body, html {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
-            max-width: 700px;
+            width: 30vw;
             margin: 0 30px;
             
             p {
+                font-size: 14px;
                 color: $black;
                 display: inline;
-                padding: 8px 34px;
+                padding: 8px 32px;
                 border: 1px solid $light-black;
                 border-radius: 4px;
                 box-shadow: 3px 3px $light-black;
@@ -283,13 +310,14 @@ body, html {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            max-width: 700px;
+            width: 30vw;
             margin: 0 30px;
     
             p {
+                font-size: 14px;
                 color: $black;
                 display: inline;
-                padding: 8px 34px;
+                padding: 8px 32px;
                 border: 1px solid $light-black;
                 border-radius: 4px;
                 box-shadow: 3px 3px $light-black;
@@ -312,7 +340,7 @@ body, html {
         color: $dark-brown;
         width: 240px;
         margin: 0 auto;
-        padding: 240px 0 0 0;
+        padding: 260px 0 0 0;
 
 
         h1 {
@@ -376,10 +404,28 @@ body, html {
 }
 
 
-.project-1, .scroll-draw-container {
+.project-1 {
     background-color: white;
     height: 140vh;
     width: 100%;
+
+    .scroll-draw-container {
+        width: 100%;
+        
+
+        span {
+            background-color: $black;
+            height: 4px;
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .scroll-draw-container, .sticky {
+        position: sticky;
+        top: 45vh;
+    }
 }
 
 
