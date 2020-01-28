@@ -247,7 +247,7 @@ body, html {
 .workSkills-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 280px;
+  padding-bottom: 260px;
 }
 
 .workSkills-container .headers {
@@ -350,7 +350,7 @@ body, html {
 
 .showcase-container {
   background-color: white;
-  padding-bottom: 320px;
+  padding-bottom: 300px;
 }
 
 .showcase-container header {
