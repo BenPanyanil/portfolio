@@ -1,18 +1,32 @@
+/*Animate landing view on page load*/
+$(function() {
+    $('.lander-header').delay(150).animate({ top: '50%', opacity: '1' });
+    $('.hoverMe').delay(600).animate({ top: '16vh', opacity: '1' })
+});
+
 /*bending the hover over me text*/
 const circleType = new CircleType(document.getElementById('hoverOverMe'));
 circleType.radius(98).dir(-1);
 
 
 /*animate hoverme-ball on hover*/
-$(document).ready(function(){
+$(function(){
     $(".hoverMe-area").hover(
         function(){
-        $(".hoverMe-ball").animate({height: "40px", width: "40px"}, 300);
-        $('#hoverOverMe').animate({opacity: "0", top: "20px"}, 100);
+            $(".hoverMe-ball").animate({height: "40px", width: "40px"}, 300);
+            $('#hoverOverMe').animate({opacity: "0", top: "20px"}, 100);
+            
+            /*Animate lander-init, lander-header to disappear and make profile picture to appear on hover*/
+            $('.lander-init').css("background-color", "#ffffff");
+            $('.lander-header-container').css("opacity", "0")
         },
+
         function(){
-        $(".hoverMe-ball").animate({height: "120px", width: "120px"}, 300);
-        $('#hoverOverMe').animate({opacity: "1", top: "-12px"}, 300);
+            $(".hoverMe-ball").animate({height: "120px", width: "120px"}, 300);
+            $('#hoverOverMe').animate({opacity: "1", top: "0"}, 300);
+
+            $('.lander-init').delay(150).css("background-color", "#F0E5CE");
+            $('.lander-header-container').delay(150).css("opacity", "1")
         }
     );
 });
