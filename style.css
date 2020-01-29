@@ -96,18 +96,13 @@ body, html {
           transition-timing-function: ease-out;
 }
 
-.lander-container .lander-init .lander-profile-container {
-  width: 75%;
+.lander-container .lander-init .lander-profile {
+  width: 70%;
   height: 100%;
   margin: 0 auto;
 }
 
-.lander-container .lander-init .lander-profile-container .profile-pic {
-  position: absolute;
-  bottom: 0;
-  right: 25vw;
-  width: 25vw;
-  height: 70vh;
+.lander-container .lander-init .lander-profile .profile-pic {
   background-color: #D3B0D9;
 }
 
