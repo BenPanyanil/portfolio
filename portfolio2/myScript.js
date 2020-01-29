@@ -33,4 +33,3 @@ $(document).scroll(function() {
 });
 
 
-/*Project line opening svg draw on scroll*/

@@ -64,8 +64,8 @@ body, html {
     transform: rotate(-90deg);
 
     position: fixed;
-    top: 68%;
-    left: -130px;
+    top: 70%;
+    left: -150px;
 
     font-size: 0.9rem;
 }
@@ -207,7 +207,8 @@ body, html {
     }
 
     .img1 {
-        width: 84px;
+        width: 100px;
+        height: 80px;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -215,7 +216,8 @@ body, html {
     }
 
     .img2 {
-        width: 86px;
+        width: 100px;
+        height: 80px;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -224,6 +226,7 @@ body, html {
 
     .img3 {
         width: 100px;
+        height: 80px;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -388,7 +391,7 @@ body, html {
     text-align: center;
     color: $dark-brown;
 
-    padding-bottom: 200px;
+    padding-bottom: 180px;
 
     h4 {
         font-weight: bold;
@@ -403,40 +406,23 @@ body, html {
     }
 }
 
-
 .project-1 {
-    background-color: white;
-    height: 140vh;
-    width: 100%;
-
-    .scroll-draw-container {
-        width: 100%;
-        
-
-        span {
-            background-color: $black;
-            height: 4px;
-            width: 40%;
-            display: block;
-            margin: 0 auto;
-        }
-    }
-
-    .scroll-draw-container, .sticky {
-        position: sticky;
-        top: 45vh;
-    }
+    padding: 280px 14vw 150px 14vw;
 }
 
-
 .project-2 {
+    padding: 150px 14vw 340px 14vw;
+}
+
+.projects {
     background-color: $black;
     width: 100%;
-    padding: 160px 0 300px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 
     .content {
-        margin-left: 14vw;
-        width: 35vw;
+        width: 30vw;
         
         h1 {
             color: white;
@@ -471,7 +457,42 @@ body, html {
             }
         }
     }
+
+    .img-content-1 {
+
+        .project-img {
+            width: 13vw;
+            box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid black;
+            margin: 0 25px;
+        }
+
+        .img-1 {
+            transform: translateY(-8%);
+        }
+        .img-2 {
+            transform: translateY(8%);
+        }
+    }
+
+    .img-content-2 {
+
+        .project-img {
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+            border: 1px solid black;
+        }
+
+        .img-1 {
+            width: 10vw;
+            transform: translate(-40%, 10%);
+        }
+        .img-2 {
+            transform: translateY(-20%);
+            width: 25vw;
+        }
+    }
 }
+
 
 .testimonials {
     background-color: $light-beige;
@@ -480,7 +501,7 @@ body, html {
     text-align: center;
     color: $black;
 
-    padding: 120px 0 300px 0;
+    padding: 180px 0 300px 0;
 
     box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.2);
 

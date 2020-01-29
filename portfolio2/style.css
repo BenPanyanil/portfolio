@@ -56,8 +56,8 @@ body, html {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: fixed;
-  top: 68%;
-  left: -130px;
+  top: 70%;
+  left: -150px;
   font-size: 0.9rem;
 }
 
@@ -204,7 +204,8 @@ body, html {
 }
 
 .keySkills-container .img1 {
-  width: 84px;
+  width: 100px;
+  height: 80px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -213,7 +214,8 @@ body, html {
 }
 
 .keySkills-container .img2 {
-  width: 86px;
+  width: 100px;
+  height: 80px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -223,6 +225,7 @@ body, html {
 
 .keySkills-container .img3 {
   width: 100px;
+  height: 80px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -412,7 +415,7 @@ body, html {
   background-color: white;
   text-align: center;
   color: #332009;
-  padding-bottom: 200px;
+  padding-bottom: 180px;
 }
 
 .projects-header h4 {
@@ -428,47 +431,37 @@ body, html {
 }
 
 .project-1 {
-  background-color: white;
-  height: 140vh;
-  width: 100%;
-}
-
-.project-1 .scroll-draw-container {
-  width: 100%;
-}
-
-.project-1 .scroll-draw-container span {
-  background-color: #2B2929;
-  height: 4px;
-  width: 40%;
-  display: block;
-  margin: 0 auto;
-}
-
-.project-1 .scroll-draw-container, .project-1 .sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 45vh;
+  padding: 280px 14vw 150px 14vw;
 }
 
 .project-2 {
+  padding: 150px 14vw 340px 14vw;
+}
+
+.projects {
   background-color: #2B2929;
   width: 100%;
-  padding: 160px 0 300px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.project-2 .content {
-  margin-left: 14vw;
-  width: 35vw;
+.projects .content {
+  width: 30vw;
 }
 
-.project-2 .content h1 {
+.projects .content h1 {
   color: white;
   font-size: 1.75rem;
   margin: 40px 0;
 }
 
-.project-2 .content p {
+.projects .content p {
   color: #f7f4eb;
   font-size: 0.9rem;
   line-height: 1.8rem;
@@ -477,7 +470,7 @@ body, html {
   margin-bottom: 80px;
 }
 
-.project-2 .content .skill-but-container {
+.projects .content .skill-but-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +481,7 @@ body, html {
           justify-content: flex-start;
 }
 
-.project-2 .content .skill-but-container p {
+.projects .content .skill-but-container p {
   font-size: 14px;
   color: #f7f4eb;
   display: inline !important;
@@ -501,12 +494,48 @@ body, html {
   opacity: 0.5;
 }
 
+.projects .img-content-1 .project-img {
+  width: 13vw;
+  -webkit-box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid black;
+  margin: 0 25px;
+}
+
+.projects .img-content-1 .img-1 {
+  -webkit-transform: translateY(-8%);
+          transform: translateY(-8%);
+}
+
+.projects .img-content-1 .img-2 {
+  -webkit-transform: translateY(8%);
+          transform: translateY(8%);
+}
+
+.projects .img-content-2 .project-img {
+  -webkit-box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+}
+
+.projects .img-content-2 .img-1 {
+  width: 10vw;
+  -webkit-transform: translate(-40%, 10%);
+          transform: translate(-40%, 10%);
+}
+
+.projects .img-content-2 .img-2 {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  width: 25vw;
+}
+
 .testimonials {
   background-color: #F7F4EB;
   width: 100%;
   text-align: center;
   color: #2B2929;
-  padding: 120px 0 300px 0;
+  padding: 180px 0 300px 0;
   -webkit-box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.2);
 }
