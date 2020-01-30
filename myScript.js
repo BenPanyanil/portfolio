@@ -31,6 +31,20 @@ $(function(){
     );
 });
 
+/*smooth scrolling effect on anchor tags */
+$(document).ready(function() {
+
+    var scrollLink = $('.scroll')
+
+    //smooth scrolling
+    scrollLink.click(function(e) {
+        e.preventDefault();
+        $('body,html').animate({
+            scrollTop: $(this.hash).offset().top
+        })
+    })
+
+})
 
 /*Nav fade in on Y position*/
 $(document).scroll(function() {
