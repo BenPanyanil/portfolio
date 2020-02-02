@@ -11,12 +11,50 @@
     <title>Contact form</title>
 </head>
 <body>
+
+    <?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+  }
+
+  if (empty($_POST["website"])) {
+    $website = "";
+  } else {
+    $website = test_input($_POST["website"]);
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+?>
+
     <div class="nav">
         <div class="turquoise-line"></div>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html" target="_self">Home</a></li>
             <li><a href="#cv">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
@@ -27,25 +65,31 @@
                 <h1>Contact</h1>
             </div>
             <div class="contact-form">
-                <form action="contact-page.php">
+                <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
                     <div class="name">
                         <label for="name">Your name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter you name">
+                        <input type="text" name="name" placeholder="Enter you name">
                     </div>
                 
                     <div class="email">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <input type="email" name="email" placeholder="Enter your email">
                     </div>
                     
                     <div class="message">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your message here..." style="height:200px"></textarea>
+                        <textarea name="message" placeholder="Your message here..."></textarea>
                     </div>
                 
                     <input class="submit-btn" type="submit" value="Submit">
                 
                   </form>
+            </div>
+            <div class="orCallme">
+                <div class="small-ball"></div>
+                <h3>Or call me!</h3>
+                <i class="fas fa-phone-alt"></i>
+                <h3>+358 452261331</h3>
             </div>
         </div>
     </main>

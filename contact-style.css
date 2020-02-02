@@ -32,7 +32,7 @@ body, html {
           align-items: center;
   margin: 0;
   padding: 0;
-  width: 270px;
+  width: 130px;
   height: 100%;
   position: relative;
   left: 14vw;
@@ -47,7 +47,7 @@ body, html {
 
 main {
   width: 100%;
-  height: 100vh;
+  padding-top: 50px;
   background-color: #F7F4EB;
 }
 
@@ -55,16 +55,15 @@ main .container {
   background-color: #fff;
   border-radius: 15px;
   width: 65vw;
-  padding: 80px 13vw;
+  padding: 80px 11vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
           box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 122px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin: 0 auto;
+  z-index: 2;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
 }
 
 main .container .contact-title {
@@ -105,12 +104,28 @@ main .container .contact-form form {
           justify-content: space-between;
 }
 
+main .container .contact-form form textarea:focus, main .container .contact-form form input:focus {
+  outline: none;
+}
+
+main .container .contact-form form .name {
+  margin-top: 40px;
+}
+
+main .container .contact-form form .email {
+  margin-top: 40px;
+}
+
+main .container .contact-form form .message {
+  margin-top: 80px;
+}
+
 main .container .contact-form form label {
   display: block;
   font-weight: bold;
   font-size: 0.75rem;
   color: rgba(43, 41, 41, 0.4);
-  padding: 15px 0;
+  padding: 5px 0;
   width: 19vw;
   min-width: 300px;
 }
@@ -124,14 +139,80 @@ main .container .contact-form form input {
   color: #2B2929;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.5px !important;
-  width: 19vw;
+  width: 20vw;
   min-width: 300px;
+}
+
+main .container .contact-form form textarea {
+  border: none;
+  border-bottom: 2px solid rgba(43, 41, 41, 0.2);
+  padding: 15px 0;
+  font-size: 1.05rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  color: #2B2929;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px !important;
+  width: 43vw;
+  min-height: 100px;
+  height: auto;
+  resize: vertical;
+}
+
+main .container .contact-form form .submit-btn {
+  min-width: 150px;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  padding: 0;
+  border: 3px solid #F0A171;
+  background-color: #fff;
+  margin-top: 40px;
+  cursor: pointer;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+main .container .contact-form form .submit-btn:hover {
+  background-color: #F0A171;
+  color: white;
+}
+
+main .container .orCallme {
+  margin: 80px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #332009;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .orCallme .small-ball {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  background-color: #D3B0D9;
+  margin-right: 25px;
+}
+
+main .container .orCallme h3 {
+  margin-right: 40px;
+}
+
+main .container .orCallme i {
+  margin-right: 25px;
 }
 
 footer {
   background-color: #886791;
   width: 100%;
-  height: 250px;
+  height: 280px;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;

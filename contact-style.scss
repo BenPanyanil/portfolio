@@ -38,7 +38,7 @@ body, html {
 
         margin: 0;
         padding: 0;
-        width: 270px;
+        width: 130px;
         height: 100%;
 
         position: relative;
@@ -58,7 +58,7 @@ body, html {
 
 main {
     width: 100%;
-    height: 100vh;
+    padding-top: 50px;
     background-color: $light-beige;
 
     .container {
@@ -66,15 +66,14 @@ main {
         border-radius: 15px;
 
         width: 65vw;
-        padding: 80px 13vw;
+        padding: 80px 11vw;
         box-sizing: border-box;
         box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 
-        position: absolute;
-        top: 122px;
-        left: 50%;
+        margin: 0 auto;
         
-        transform: translateX(-50%);
+        z-index: 2;
+        transform: translateY(70px);
 
         .contact-title {
             display: flex;
@@ -103,12 +102,28 @@ main {
                 flex-wrap: wrap;
                 justify-content: space-between;
 
+                textarea:focus, input:focus{
+                    outline: none;
+                }
+
+                .name {
+                    margin-top: 40px;
+                }
+
+                .email {
+                    margin-top: 40px;
+                }
+
+                .message {
+                    margin-top: 80px;
+                }
+
                 label {
                     display: block;
                     font-weight: bold;
                     font-size: 0.75rem;
                     color: rgba(43, 41, 41, 0.4);
-                    padding: 15px 0;
+                    padding: 5px 0;
                     width: 19vw;
                     min-width: 300px;
                 }
@@ -122,23 +137,85 @@ main {
                     color: $black;
                     font-family: 'Montserrat', sans-serif;
                     letter-spacing: 0.5px !important;
-                    width: 19vw;
+                    width: 20vw;
                     min-width: 300px;
                 }
 
+                textarea {
+                    border: none;
+                    border-bottom: 2px solid rgba(43, 41, 41, 0.2);
+                    padding: 15px 0;
+
+                    font-size: 1.05rem;
+                    font-weight: bold;
+                    line-height: 1.6rem;
+
+                    color: $black;
+                    font-family: 'Montserrat', sans-serif;
+                    letter-spacing: 0.5px !important;
+                    
+                    width: 43vw;
+                    min-height: 100px;
+                    height: auto;
+                    resize: vertical;
+                }
+
                 .submit-btn {
-                    border-radius: ;
+                    min-width: 150px;
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 50px;
+                    box-sizing: border-box;
+
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 0;
+
+                    border: 3px solid #F0A171;
+                    background-color: #fff;
+
+                    margin-top: 40px;
+                    cursor: pointer;
+
+                    transition-duration: 250ms;
+                }
+
+                .submit-btn:hover {
+                    background-color: #F0A171;
+                    color: white;
                 }
             }
         }
 
+        .orCallme {
+            margin: 80px 0 20px 0;
+            display: flex;
+            color: $dark-brown;
+            align-items: center;
+            
+            .small-ball {
+                width: 45px;
+                height: 45px;
+                border-radius: 45px;
+                background-color: #D3B0D9;
+                margin-right: 25px;
+            }
+
+            h3 {
+                margin-right: 40px;
+            }
+
+            i {
+                margin-right: 25px;
+            }
+        }
     }
 }
 
 footer {
     background-color: #886791;
     width: 100%;
-    height: 250px;
+    height: 280px;
     color: white;
     display: flex;
     align-items: flex-end;
