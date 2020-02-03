@@ -32,7 +32,7 @@ body, html {
           align-items: center;
   margin: 0;
   padding: 0;
-  width: 360px;
+  width: 280px;
   height: 100%;
   position: relative;
   left: 14vw;
@@ -156,7 +156,7 @@ body, html {
           align-items: center;
   margin: 0;
   padding: 0;
-  width: 360px;
+  width: 280px;
   height: 100%;
   position: relative;
   left: 14vw;
@@ -694,6 +694,8 @@ body, html {
   border-radius: 58px;
   font-weight: bold;
   font-size: 16px;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
@@ -728,5 +730,58 @@ body, html {
   color: #2B2929;
   text-align: center;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-fixed {
+    height: 54px;
+  }
+  .nav-fixed ul {
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 280px;
+    height: 100%;
+    list-style: none;
+  }
+  .nav-fixed ul li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .lander-container .hoverMe {
+    height: 60px;
+    width: 60px;
+    right: 10vw;
+    top: 10px;
+  }
+  .lander-container .hoverMe .hoverMe-area .hoverMe-ball {
+    height: 60px;
+    width: 60px;
+  }
+  .lander-container .hoverMe #hoverOverMe {
+    font-size: 14px;
+  }
+  .lander-container .lander-init .lander-profile {
+    width: 95%;
+  }
+  .lander-container .lander-init .lander-header-container .lander-header {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    left: 6vw;
+    top: 50%;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
 }
 /*# sourceMappingURL=style.css.map */

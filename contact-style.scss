@@ -66,6 +66,7 @@ main {
         border-radius: 15px;
 
         width: 65vw;
+        min-width: 1200px;
         padding: 80px 11vw;
         box-sizing: border-box;
         box-shadow: 0 15px 40px rgba(0,0,0,0.2);
@@ -125,7 +126,7 @@ main {
                     color: rgba(43, 41, 41, 0.4);
                     padding: 5px 0;
                     width: 19vw;
-                    min-width: 300px;
+                    min-width: 400px;
                 }
 
                 input {
@@ -138,7 +139,7 @@ main {
                     font-family: 'Montserrat', sans-serif;
                     letter-spacing: 0.5px !important;
                     width: 20vw;
-                    min-width: 300px;
+                    min-width: 400px;
                 }
 
                 textarea {
@@ -155,12 +156,14 @@ main {
                     letter-spacing: 0.5px !important;
                     
                     width: 43vw;
+                    min-width: 830px;
                     min-height: 100px;
                     height: auto;
                     resize: vertical;
                 }
 
                 .submit-btn {
+                    margin-right: 200px;
                     min-width: 150px;
                     width: 150px;
                     height: 50px;

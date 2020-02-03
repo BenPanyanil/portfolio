@@ -38,7 +38,7 @@ body, html {
 
         margin: 0;
         padding: 0;
-        width: 360px;
+        width: 280px;
         height: 100%;
 
         position: relative;
@@ -163,7 +163,7 @@ body, html {
 
             margin: 0;
             padding: 0;
-            width: 360px;
+            width: 280px;
             height: 100%;
 
             position: relative;
@@ -645,6 +645,8 @@ body, html {
 
             font-weight: bold;
             font-size: 16px;
+            color: #fff;
+            text-decoration: none;
 
             cursor: pointer;
 
@@ -680,4 +682,85 @@ body, html {
         text-align: center;
         font-weight: 500;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav-fixed {
+        height: 54px;
+    
+        .turquoise-line {
+
+        }
+    
+        ul {
+            font-size: 12px;
+    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            margin: 0 auto;
+            padding: 0;
+            width: 280px;
+            height: 100%;
+    
+            
+            list-style: none;
+    
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    
+
+    .lander-container {
+    
+        .hoverMe {
+            height: 60px;
+            width: 60px;
+            right: 10vw;
+            top: 10px;
+
+    
+            .hoverMe-area {
+    
+                .hoverMe-ball {
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+    
+            #hoverOverMe {
+                font-size: 14px;
+            }
+        }
+    
+        .lander-init {
+    
+            .lander-profile {
+                width: 95%;
+            }
+    
+            .lander-header-container {
+    
+                .lander-header {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 2rem;
+
+                    left: 6vw;
+                    top: 50%;
+            
+                    transform: translateY(-30%);
+                }
+            }
+        }
+    }
+
 }
