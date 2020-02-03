@@ -72,8 +72,8 @@ main {
 
         margin: 0 auto;
         
-        z-index: 2;
         transform: translateY(70px);
+        opacity: 0;
 
         .contact-title {
             display: flex;

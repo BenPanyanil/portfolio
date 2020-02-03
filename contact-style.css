@@ -61,9 +61,9 @@ main .container {
   -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
           box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  z-index: 2;
   -webkit-transform: translateY(70px);
           transform: translateY(70px);
+  opacity: 0;
 }
 
 main .container .contact-title {
