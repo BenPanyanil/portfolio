@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "myScript.js",
+  "dependencies": {
+    "circletype": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenPanyanil/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "ben panyanil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenPanyanil/portfolio/issues"
+  },
+  "homepage": "https://github.com/BenPanyanil/portfolio#readme"
+}
