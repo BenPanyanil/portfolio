@@ -684,83 +684,225 @@ body, html {
     }
 }
 
-@media only screen and (max-width: 600px) {
-
-    .nav-fixed {
-        height: 54px;
-    
-        .turquoise-line {
-
-        }
-    
-        ul {
-            font-size: 12px;
-    
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-    
-            margin: 0 auto;
-            padding: 0;
-            width: 280px;
-            height: 100%;
-    
-            
-            list-style: none;
-    
-            li {
-                a {
-                    text-decoration: none;
-                    color: white;
-                    letter-spacing: 1px;
-                }
-            }
-        }
+@media only screen and (max-width: 1500px) {
+    body, html {
+        min-width: 1260px;
     }
-    
 
     .lander-container {
     
         .hoverMe {
-            height: 60px;
-            width: 60px;
-            right: 10vw;
-            top: 10px;
-
+            height: 100px;
+            width: 100px;
     
             .hoverMe-area {
-    
+                
                 .hoverMe-ball {
-                    height: 60px;
-                    width: 60px;
+                    height: 100px;
+                    width: 100px;
                 }
             }
     
             #hoverOverMe {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     
         .lander-init {
     
-            .lander-profile {
-                width: 95%;
-            }
-    
             .lander-header-container {
     
                 .lander-header {
-                    font-weight: 500;
-                    font-size: 1rem;
-                    line-height: 2rem;
-
-                    left: 6vw;
-                    top: 50%;
-            
-                    transform: translateY(-30%);
+                    font-size: 2.4rem;
+                    line-height: 4.5rem;
                 }
             }
         }
     }
 
+    .keySkills-container {
+        max-width: 1100px;
+
+        p {
+            width: 300px;
+        }
+    }
+
+    .workSkills-container {
+        .but-container {
+
+            .design-skills-but-container {
+
+                width: 35vw;
+                
+                p {
+                    font-size: 13px;
+                    padding: 8px 28px;
+                }
+            }
+        
+            .coding-skills-but-container {
+
+                width: 35vw;
+        
+                p {
+                    font-size: 13px;
+                    padding: 8px 30px;
+                }
+            }
+    
+        }
+    }
+    
+    .showcase-container {
+    
+        .showcase-flexbox {
+
+            width: 72vw;
+
+    
+            img {
+                height: 22vw;
+                width: 24vw;
+            }
+        }
+    
+    }
+
+    .project-1 {
+        padding: 280px 6vw 150px 6vw;
+    }
+    
+    .project-2 {
+        padding: 150px 6vw 340px 6vw;
+    }
+    
+    .projects {
+    
+        .content {
+            width: 40vw;
+    
+            .skill-but-container {
+    
+                p {
+                    font-size: 13px;
+                    padding: 7px 27px;
+                }
+            }
+        }
+    
+        .img-content-1 {
+    
+            .project-img {
+                width: 17vw;
+                margin: 0 15px;
+            }
+        }
+    
+        .img-content-2 {
+    
+            .img-1 {
+                width: 14vw;
+                transform: translate(-40%, 15%);
+            }
+            .img-2 {
+                transform: translateY(-35%);
+                width: 30vw;
+            }
+        }
+    }
+
+    .testimonials {
+        background-color: $light-beige;
+        width: 100%;
+    
+        text-align: center;
+        color: $black;
+    
+        padding: 180px 0 300px 0;
+    
+        box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.2);
+    
+        p {
+            margin: 30px 0;
+            font-weight: 500;
+        }
+    
+        .line {
+            width: 68vw;
+            height: 1px;
+            background-color: $black;
+            opacity: 0.3;
+            margin: 60px auto 30px auto;
+        }
+    
+        .swiper-container {
+            width: 85vw;
+    
+            .swiper-slide {
+    
+                .flexbox {
+                    display: flex;
+                    width: 100%;
+                    padding-bottom: 180px;
+                    justify-content: space-evenly;
+    
+                    .content {
+                        text-align: start;
+                        width: 45%;
+                        
+                        h4 {
+                            letter-spacing: 0.5px;
+                        }
+    
+                        p {
+                            font-size: 0.9rem;
+                            font-style: italic;
+                            letter-spacing: 0.5px;
+                            line-height: 1.8rem;
+                        }
+    
+                        .content-header {
+                            display: flex;
+                            align-items: center;
+    
+                            .header-ball {
+                                width: 45px;
+                                height: 45px;
+                                border-radius: 45px;
+                                margin-right: 25px;
+                            }
+    
+                            .hb1 {
+                                background-color: #D3B0D9;
+                            }
+                            
+                            .hb2 {
+                                background-color: #ED9E5C;
+                            }
+                            
+                            .hb3 {
+                                background-color: $turquoise;
+                            }
+                            
+                            .hb4 {
+                                background-color: #D3B0D9;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination-bullet-active {
+                background-color: $turquoise;
+            }
+        }
+    }
+
+    .footer {
+        .footerCard {
+            width: 85vw;
+        }
+    }
+    
+    
 }
