@@ -2,13 +2,14 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  min-width: 1260px;
 }
 
 .nav-fixed {
   display: none;
   position: fixed;
   z-index: 10;
-  width: 100%;
+  width: 100vw;
   height: 54px;
   background-color: #2B2929;
 }
@@ -806,82 +807,10 @@ body, html {
     width: 30vw;
   }
   .testimonials {
-    background-color: #F7F4EB;
-    width: 100%;
-    text-align: center;
-    color: #2B2929;
-    padding: 180px 0 300px 0;
-    -webkit-box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  .testimonials p {
-    margin: 30px 0;
-    font-weight: 500;
-  }
-  .testimonials .line {
-    width: 68vw;
-    height: 1px;
-    background-color: #2B2929;
-    opacity: 0.3;
-    margin: 60px auto 30px auto;
-  }
-  .testimonials .swiper-container {
-    width: 85vw;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding-bottom: 180px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content {
-    text-align: start;
-    width: 45%;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content h4 {
-    letter-spacing: 0.5px;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content p {
-    font-size: 0.9rem;
-    font-style: italic;
-    letter-spacing: 0.5px;
-    line-height: 1.8rem;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content .content-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content .content-header .header-ball {
-    width: 45px;
-    height: 45px;
-    border-radius: 45px;
-    margin-right: 25px;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content .content-header .hb1 {
-    background-color: #D3B0D9;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content .content-header .hb2 {
-    background-color: #ED9E5C;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content .content-header .hb3 {
-    background-color: #5BC5C7;
-  }
-  .testimonials .swiper-container .swiper-slide .flexbox .content .content-header .hb4 {
-    background-color: #D3B0D9;
-  }
-  .testimonials .swiper-container .swiper-pagination-bullet-active {
-    background-color: #5BC5C7;
+    min-width: 1200px;
   }
   .footer .footerCard {
-    width: 85vw;
+    min-width: 1200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
