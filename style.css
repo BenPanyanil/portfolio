@@ -364,6 +364,27 @@ body, html {
   margin: 7px 7px;
 }
 
+.overlayModal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 50;
+}
+
+.overlayModal .contentModal {
+  display: none;
+  height: 88vh;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .showcase-container {
   background-color: white;
   padding-bottom: 300px;
@@ -422,6 +443,13 @@ body, html {
   height: 18vw;
   width: 21vw;
   background-position: center;
+  cursor: pointer;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.showcase-container .showcase-flexbox img:hover {
+  opacity: 0.5;
 }
 
 .projects-header {

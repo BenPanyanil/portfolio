@@ -347,6 +347,27 @@ body, html {
     }
 }
 
+.overlayModal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 50;
+
+    .contentModal {
+        display: none;
+        height: 88vh;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 .showcase-container {
     background-color: white;
     padding-bottom: 300px;
@@ -397,6 +418,13 @@ body, html {
             height: 18vw;
             width: 21vw;
             background-position: center;
+            cursor: pointer;
+
+            transition-duration: 400ms;
+        }
+
+        img:hover {
+            opacity: 0.5;
         }
     }
 

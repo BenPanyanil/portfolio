@@ -60,4 +60,21 @@ $(document).scroll(function() {
     }
 });
 
+/*Image modal function*/
+$(function(){
+    $(".triggerModal").click(
+        function(e) {
+            console.log(e.target.id.substring(e.target.id.length-1))
+           $('.overlayModal').fadeIn();
+           $(`#content-img-${e.target.id.substring(e.target.id.length-1)}`).fadeIn();
+        }
+    );
+
+    $('.overlayModal').click(
+        function(e) {
+            $('.overlayModal').fadeOut();
+            $('.contentModal').fadeOut();
+        }
+    )
+});
 
