@@ -64,9 +64,8 @@ $(document).scroll(function() {
 $(function(){
     $(".triggerModal").click(
         function(e) {
-            console.log(e.target.id.substring(e.target.id.length-1))
-           $('.overlayModal').fadeIn();
-           $(`#content-img-${e.target.id.substring(e.target.id.length-1)}`).fadeIn();
+           $('.overlayModal').fadeIn(300);
+           $(`#content-img-${e.target.id.substring(e.target.id.length-1)}`).delay(250).fadeIn();
         }
     );
 
