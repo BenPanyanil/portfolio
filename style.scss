@@ -61,6 +61,96 @@ body, html {
 .lander-container {
     width: 100%;
     height: 100vh;
+    position: relative;
+
+    z-index: 0;
+
+    overflow-x: hidden;
+    
+    .lander-profile {
+        width: 100%;
+        height: 100%;
+
+        background-color: $light-beige;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: 1;
+
+        .profile-text {
+            position: absolute;
+            left: 22%;
+            top: 7%;
+            color: $dark-brown;
+
+            h1 {
+                font-size: 2.8rem;
+                line-height: 4.6rem;
+                font-weight: normal;
+            }
+
+            #txtParaph {
+                font-weight: normal;
+                font-size: 1.6rem;
+                line-height: 3.2rem;
+
+                width: 300px;
+                margin-top: 100px;
+                position: relative;
+                top: 40px;
+                opacity: 0;
+            }
+        }
+
+        .profile-pic {
+            background-image: url('./img/profilePic.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            height: 100%;
+            width: 64%;
+
+            position: absolute;
+            left: 70%;
+            transform: translateX(-28%);
+            opacity: 0;
+        }
+    }
+
+
+    .lander-init {
+        background-color: $beige;
+        position: absolute;
+        z-index: 2;
+
+        width: 100%;
+        height: 100%;
+
+        transition-duration: 300ms;
+        transition-timing-function: ease-out;
+
+
+
+        .lander-header-container {
+            transition-duration: 300ms;
+            transition-timing-function: ease-out;
+
+            .lander-header {
+                color: $dark-brown;
+                font-weight: normal;
+                font-size: 3rem;
+                line-height: 5rem;
+        
+                position: absolute;
+                left: 14vw;
+                top: 60%;
+        
+                transform: translateY(-54%);
+                opacity: 0;
+            }
+        }
+    }
 
     .hoverMe {
         height: 120px;
@@ -72,6 +162,7 @@ body, html {
         transform: translate(-50%, -50%);
 
         opacity: 0;
+        z-index: 3;
 
         .hoverMe-area {
             width: 100%;
@@ -98,53 +189,6 @@ body, html {
         }
     }
 
-    .lander-init {
-        background-color: $beige;
-
-        width: 100%;
-        height: 100vh;
-
-        transition-duration: 300ms;
-        transition-timing-function: ease-out;
-
-
-        .lander-profile {
-            width: 70%;
-            height: 100%;
-            float: right;
-    
-            .profile-pic {
-                padding: 0;
-                margin: 0;
-                background-image: url('./img/profilePic.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: bottom;
-                height: 100%;
-                width: 100%;
-
-            }
-        }
-
-        .lander-header-container {
-            transition-duration: 300ms;
-            transition-timing-function: ease-out;
-
-            .lander-header {
-                color: $dark-brown;
-                font-weight: normal;
-                font-size: 3rem;
-                line-height: 5rem;
-        
-                position: absolute;
-                left: 14vw;
-                top: 60%;
-        
-                transform: translateY(-54%);
-                opacity: 0;
-            }
-        }
-    }
 }
 
 

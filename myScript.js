@@ -17,7 +17,7 @@ $(function(){
             $('#hoverOverMe').animate({opacity: "0", top: "20px"}, 100);
             
             /*Animate lander-init, lander-header to disappear and make profile picture to appear on hover*/
-            $('.lander-init').css("background-color", "#ffffff");
+            $('.lander-init').css("opacity", "0");
             $('.lander-header-container').css("opacity", "0")
         },
 
@@ -25,11 +25,44 @@ $(function(){
             $(".hoverMe-ball").animate({height: "120px", width: "120px"}, 300);
             $('#hoverOverMe').animate({opacity: "1", top: "0"}, 300);
 
-            $('.lander-init').delay(150).css("background-color", "#F0E5CE");
+            $('.lander-init').delay(150).css("opacity", "1");
             $('.lander-header-container').delay(150).css("opacity", "1")
         }
     );
 });
+
+
+//Typewriting effect on profile-text
+var str = "You found the culprit!       <br><span style='color:#F0A171; font-weight: bold;'>I am Ben.</span>",
+    i = 0,
+    isTag,
+    text;
+
+function type() {
+    text = str.slice(0, ++i);
+    if (text === str) return;
+    
+    document.getElementById('txtHeader').innerHTML = text;
+
+    var char = text.slice(-1);
+    if( char === '<' ) isTag = true;
+    if( char === '>' ) isTag = false;
+
+    if (isTag) return type();
+    setTimeout(type, 50);
+};
+
+//Animate my profilepic into the view and typewriter effext on texts
+$(function(){
+    $(".hoverMe-area").mouseenter(
+        function(){ 
+            $('.profile-pic').delay(150).animate({opacity: '1', left: '48%'}, 300),
+            setTimeout(() => {type()}, 800),
+            $('#txtParaph').delay(3000).animate({opacity: '1', top: '0'}, 600)
+        }
+    )
+})
+
 
 /*smooth scrolling effect on anchor tags */
 $(document).ready(function() {

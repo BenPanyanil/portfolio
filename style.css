@@ -49,6 +49,89 @@ body, html {
 .lander-container {
   width: 100%;
   height: 100vh;
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.lander-container .lander-profile {
+  width: 100%;
+  height: 100%;
+  background-color: #F7F4EB;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.lander-container .lander-profile .profile-text {
+  position: absolute;
+  left: 22%;
+  top: 7%;
+  color: #332009;
+}
+
+.lander-container .lander-profile .profile-text h1 {
+  font-size: 2.8rem;
+  line-height: 4.6rem;
+  font-weight: normal;
+}
+
+.lander-container .lander-profile .profile-text #txtParaph {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  width: 300px;
+  margin-top: 100px;
+  position: relative;
+  top: 40px;
+  opacity: 0;
+}
+
+.lander-container .lander-profile .profile-pic {
+  background-image: url("./img/profilePic.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  width: 64%;
+  position: absolute;
+  left: 70%;
+  -webkit-transform: translateX(-28%);
+          transform: translateX(-28%);
+  opacity: 0;
+}
+
+.lander-container .lander-init {
+  background-color: #F0E5CE;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.lander-container .lander-init .lander-header-container {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.lander-container .lander-init .lander-header-container .lander-header {
+  color: #332009;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 5rem;
+  position: absolute;
+  left: 14vw;
+  top: 60%;
+  -webkit-transform: translateY(-54%);
+          transform: translateY(-54%);
+  opacity: 0;
 }
 
 .lander-container .hoverMe {
@@ -60,6 +143,7 @@ body, html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0;
+  z-index: 3;
 }
 
 .lander-container .hoverMe .hoverMe-area {
@@ -85,53 +169,6 @@ body, html {
   color: #332009;
   font-weight: bold;
   font-size: 18px;
-}
-
-.lander-container .lander-init {
-  background-color: #F0E5CE;
-  width: 100%;
-  height: 100vh;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-}
-
-.lander-container .lander-init .lander-profile {
-  width: 70%;
-  height: 100%;
-  float: right;
-}
-
-.lander-container .lander-init .lander-profile .profile-pic {
-  padding: 0;
-  margin: 0;
-  background-image: url("./img/profilePic.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
-}
-
-.lander-container .lander-init .lander-header-container {
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-}
-
-.lander-container .lander-init .lander-header-container .lander-header {
-  color: #332009;
-  font-weight: normal;
-  font-size: 3rem;
-  line-height: 5rem;
-  position: absolute;
-  left: 14vw;
-  top: 60%;
-  -webkit-transform: translateY(-54%);
-          transform: translateY(-54%);
-  opacity: 0;
 }
 
 .mySkills {
