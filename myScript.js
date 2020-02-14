@@ -1,20 +1,23 @@
 /*Animate landing view on page load*/
 $(function() {
     $('.lander-header').delay(150).animate({ top: '50%', opacity: '1' });
-    $('.hoverMe').delay(600).animate({ top: '16vh', opacity: '1' })
+    $('.hoverMe').delay(600).animate({ top: '18vh', opacity: '1' })
 });
 
-/*bending the hover over me text*/
-const circleType = new CircleType(document.getElementById('hoverOverMe'));
-circleType.radius(98).dir(-1);
+/*animate ball infinitely*/
+$(function(){
+    animateBall()
+})
 
+function animateBall() {
+    $('hoverMe-ball').delay(500).animate({ width: '80px', height: '80px'})
+}
 
 /*animate hoverme-ball on hover*/
 $(function(){
     $(".hoverMe-area").hover(
         function(){
             $(".hoverMe-ball").animate({height: "40px", width: "40px"}, 300);
-            $('#hoverOverMe').animate({opacity: "0", top: "20px"}, 100);
             
             /*Animate lander-init, lander-header to disappear and make profile picture to appear on hover*/
             $('.lander-init').css("opacity", "0");
@@ -23,7 +26,6 @@ $(function(){
 
         function(){
             $(".hoverMe-ball").animate({height: "120px", width: "120px"}, 300);
-            $('#hoverOverMe').animate({opacity: "1", top: "0"}, 300);
 
             $('.lander-init').delay(150).css("opacity", "1");
             $('.lander-header-container').delay(150).css("opacity", "1")

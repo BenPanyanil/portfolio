@@ -157,7 +157,7 @@ body, html {
         width: 120px;
 
         position: absolute;
-        right: 11vw;
+        right: 13vw;
         top: -120px;
         transform: translate(-50%, -50%);
 
@@ -178,14 +178,6 @@ body, html {
                 border-radius: 50%;
                 background-color: $turquoise;
             }
-        }
-
-        #hoverOverMe {
-            position: relative;
-            top: 0;
-            color: $dark-brown;
-            font-weight: bold;
-            font-size: 18px;
         }
     }
 
