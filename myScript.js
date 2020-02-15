@@ -1,23 +1,17 @@
 /*Animate landing view on page load*/
 $(function() {
-    $('.lander-header').delay(150).animate({ top: '50%', opacity: '1' });
-    $('.hoverMe').delay(600).animate({ top: '18vh', opacity: '1' })
+    $('.lander-header').delay(150).animate({ top: '50%', opacity: '1' }, 600);
+    $('.hoverMe-ball').delay(1000).animate({ width: '130px', height: '130px', opacity: '1'}, 300).animate({ width: '110px', height: '110px'}, 300)
 });
 
-/*animate ball infinitely*/
-$(function(){
-    animateBall()
-})
-
-function animateBall() {
-    $('hoverMe-ball').delay(500).animate({ width: '80px', height: '80px'})
-}
 
 /*animate hoverme-ball on hover*/
+
 $(function(){
     $(".hoverMe-area").hover(
         function(){
             $(".hoverMe-ball").animate({height: "40px", width: "40px"}, 300);
+            $(".hoverMe-ball").css("animation", "none");
             
             /*Animate lander-init, lander-header to disappear and make profile picture to appear on hover*/
             $('.lander-init').css("opacity", "0");
@@ -25,7 +19,8 @@ $(function(){
         },
 
         function(){
-            $(".hoverMe-ball").animate({height: "120px", width: "120px"}, 300);
+            $(".hoverMe-ball").animate({height: "110px", width: "110px"}, 300);
+            $(".hoverMe-ball").delay(800).css("animation", "pulse 1400ms infinite");
 
             $('.lander-init').delay(150).css("opacity", "1");
             $('.lander-header-container').delay(150).css("opacity", "1")
@@ -54,7 +49,7 @@ function type() {
     setTimeout(type, 50);
 };
 
-//Animate my profilepic into the view and typewriter effext on texts
+//Animate my profile_pic into the view and typewriter effext on texts
 $(function(){
     $(".hoverMe-area").mouseenter(
         function(){ 
