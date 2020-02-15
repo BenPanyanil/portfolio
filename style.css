@@ -135,11 +135,11 @@ body, html {
 }
 
 .lander-container .hoverMe {
-  height: 110px;
-  width: 110px;
+  height: 120px;
+  width: 120px;
   position: absolute;
   right: 13vw;
-  top: 16vh;
+  top: 20vh;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 3;

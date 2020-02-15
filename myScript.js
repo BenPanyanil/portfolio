@@ -1,7 +1,7 @@
 /*Animate landing view on page load*/
 $(function() {
     $('.lander-header').delay(150).animate({ top: '50%', opacity: '1' }, 600);
-    $('.hoverMe-ball').delay(1000).animate({ width: '130px', height: '130px', opacity: '1'}, 300).animate({ width: '110px', height: '110px'}, 300)
+    $('.hoverMe-ball').delay(800).animate({ width: '135px', height: '135px', opacity: '1'}, 300).animate({ width: '120px', height: '120px'}, 300)
 });
 
 
@@ -19,7 +19,7 @@ $(function(){
         },
 
         function(){
-            $(".hoverMe-ball").animate({height: "110px", width: "110px"}, 300);
+            $(".hoverMe-ball").animate({height: "120px", width: "120px"}, 300);
             $(".hoverMe-ball").delay(800).css("animation", "pulse 1400ms infinite");
 
             $('.lander-init').delay(150).css("opacity", "1");
