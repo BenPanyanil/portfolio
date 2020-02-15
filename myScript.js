@@ -6,7 +6,6 @@ $(function() {
 
 
 /*animate hoverme-ball on hover*/
-
 $(function(){
     $(".hoverMe-area").hover(
         function(){
@@ -49,6 +48,7 @@ function type() {
     setTimeout(type, 50);
 };
 
+
 //Animate my profile_pic into the view and typewriter effext on texts
 $(function(){
     $(".hoverMe-area").mouseenter(
@@ -59,6 +59,100 @@ $(function(){
         }
     )
 })
+
+
+//Pagination functionality
+const landerContainer = document.querySelector('.lander-container');
+const mySkills = document.querySelector('.mySkills');
+const showcaseContainer = document.querySelector('.showcase-container');
+const projectsContainer = document.querySelector('.projectsContainer');
+const testimonials = document.querySelector('.testimonials');
+const footer = document.querySelector('.footer')
+
+window.addEventListener('scroll', function() {
+    const indexBar = document.querySelector('.index-bar1');
+    const indexNro = document.querySelector('.index-nro1');
+
+    if ( landerContainer.getBoundingClientRect().top <= 0 && landerContainer.getBoundingClientRect().bottom >= 0) {
+        indexBar.style.width = '22px';
+        indexNro.style.opacity = '1';
+
+    } else if (landerContainer.getBoundingClientRect().bottom <= 0) {
+        indexBar.style.width = '10px';
+        indexNro.style.opacity = '0';
+    }
+})
+
+window.addEventListener('scroll', function() {
+    const indexBar = document.querySelector('.index-bar2');
+    const indexNro = document.querySelector('.index-nro2');
+
+    if ( mySkills.getBoundingClientRect().top <= 0 && mySkills.getBoundingClientRect().bottom >= 0) {
+        indexBar.style.width = '22px';
+        indexNro.style.opacity = '1';
+
+    } else if (mySkills.getBoundingClientRect().bottom <= 0 || mySkills.getBoundingClientRect().top >= 0) {
+        indexBar.style.width = '10px';
+        indexNro.style.opacity = '0';
+    }
+})
+
+window.addEventListener('scroll', function() {
+    const indexBar = document.querySelector('.index-bar3');
+    const indexNro = document.querySelector('.index-nro3');
+
+    if ( showcaseContainer.getBoundingClientRect().top <= 0 && showcaseContainer.getBoundingClientRect().bottom >= 0) {
+        indexBar.style.width = '22px';
+        indexNro.style.opacity = '1';
+
+    } else if (showcaseContainer.getBoundingClientRect().bottom <= 0 || showcaseContainer.getBoundingClientRect().top >= 0) {
+        indexBar.style.width = '10px';
+        indexNro.style.opacity = '0';
+    }
+})
+
+window.addEventListener('scroll', function() {
+    const indexBar = document.querySelector('.index-bar4');
+    const indexNro = document.querySelector('.index-nro4');
+
+    if ( projectsContainer.getBoundingClientRect().top <= 0 && projectsContainer.getBoundingClientRect().bottom >= 0) {
+        indexBar.style.width = '22px';
+        indexNro.style.opacity = '1';
+
+    } else if (projectsContainer.getBoundingClientRect().bottom <= 0 || projectsContainer.getBoundingClientRect().top >= 0) {
+        indexBar.style.width = '10px';
+        indexNro.style.opacity = '0';
+    }
+})
+
+window.addEventListener('scroll', function() {
+    const indexBar = document.querySelector('.index-bar5');
+    const indexNro = document.querySelector('.index-nro5');
+
+    if ( testimonials.getBoundingClientRect().top <= 0 && testimonials.getBoundingClientRect().bottom >= window.innerHeight) {
+        indexBar.style.width = '22px';
+        indexNro.style.opacity = '1';
+
+    } else if (testimonials.getBoundingClientRect().bottom <= window.innerHeight || testimonials.getBoundingClientRect().top >= 0) {
+        indexBar.style.width = '10px';
+        indexNro.style.opacity = '0';
+    } 
+})
+
+window.addEventListener('scroll', function() {
+    const indexBar = document.querySelector('.index-bar6');
+    const indexNro = document.querySelector('.index-nro6');
+
+    if ( footer.getBoundingClientRect().top <= window.innerHeight) {
+        indexBar.style.width = '22px';
+        indexNro.style.opacity = '1';
+
+    } else if (footer.getBoundingClientRect().top >= window.innerHeight) {
+        indexBar.style.width = '10px';
+        indexNro.style.opacity = '0';
+    } 
+})
+
 
 
 /*smooth scrolling effect on anchor tags */

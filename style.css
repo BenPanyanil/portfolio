@@ -46,6 +46,54 @@ body, html {
   letter-spacing: 1px;
 }
 
+.pagination {
+  position: fixed;
+  right: 50px;
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 3;
+}
+
+.pagination .index-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 28px 0;
+}
+
+.pagination .index-item .index-nro {
+  color: #5BC5C7;
+  font-size: 14px;
+  margin-right: 10px;
+  opacity: 0;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.pagination .index-item .index-bar {
+  width: 10px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #5BC5C7;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.pagination .index-item .index-bar1 {
+  width: 22px;
+}
+
+.pagination .index-item .index-nro1 {
+  opacity: 1;
+}
+
 .lander-container {
   width: 100%;
   height: 100vh;
@@ -522,34 +570,34 @@ body, html {
   opacity: 0.5;
 }
 
-.projects-header {
+.projectsContainer .projects-header {
   background-color: white;
   text-align: center;
   color: #332009;
   padding-bottom: 180px;
 }
 
-.projects-header h4 {
+.projectsContainer .projects-header h4 {
   font-weight: bold;
   font-size: 1.1rem;
   padding: 40px;
   margin: 0;
 }
 
-.projects-header h1 {
+.projectsContainer .projects-header h1 {
   font-weight: normal;
   font-size: 2.8rem;
 }
 
-.project-1 {
+.projectsContainer .project-1 {
   padding: 280px 14vw 150px 14vw;
 }
 
-.project-2 {
+.projectsContainer .project-2 {
   padding: 150px 14vw 340px 14vw;
 }
 
-.projects {
+.projectsContainer .projects {
   background-color: #2B2929;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -565,17 +613,17 @@ body, html {
           align-items: center;
 }
 
-.projects .content {
+.projectsContainer .projects .content {
   width: 30vw;
 }
 
-.projects .content h1 {
+.projectsContainer .projects .content h1 {
   color: white;
   font-size: 1.75rem;
   margin: 40px 0;
 }
 
-.projects .content p {
+.projectsContainer .projects .content p {
   color: #f7f4eb;
   font-size: 0.9rem;
   line-height: 1.8rem;
@@ -584,7 +632,7 @@ body, html {
   margin-bottom: 80px;
 }
 
-.projects .content .skill-but-container {
+.projectsContainer .projects .content .skill-but-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +643,7 @@ body, html {
           justify-content: flex-start;
 }
 
-.projects .content .skill-but-container p {
+.projectsContainer .projects .content .skill-but-container p {
   font-size: 14px;
   color: #f7f4eb;
   display: inline !important;
@@ -608,7 +656,7 @@ body, html {
   opacity: 0.5;
 }
 
-.projects .img-content-1 .project-img {
+.projectsContainer .projects .img-content-1 .project-img {
   width: 14vw;
   -webkit-box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
@@ -616,29 +664,29 @@ body, html {
   margin: 0 25px;
 }
 
-.projects .img-content-1 .img-1 {
+.projectsContainer .projects .img-content-1 .img-1 {
   -webkit-transform: translateY(-8%);
           transform: translateY(-8%);
 }
 
-.projects .img-content-1 .img-2 {
+.projectsContainer .projects .img-content-1 .img-2 {
   -webkit-transform: translateY(8%);
           transform: translateY(8%);
 }
 
-.projects .img-content-2 .project-img {
+.projectsContainer .projects .img-content-2 .project-img {
   -webkit-box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
   border: 1px solid black;
 }
 
-.projects .img-content-2 .img-1 {
+.projectsContainer .projects .img-content-2 .img-1 {
   width: 12vw;
   -webkit-transform: translate(-40%, 10%);
           transform: translate(-40%, 10%);
 }
 
-.projects .img-content-2 .img-2 {
+.projectsContainer .projects .img-content-2 .img-2 {
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
   width: 28vw;
