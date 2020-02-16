@@ -100,7 +100,9 @@ body, html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 75vh;
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: -130px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -965,6 +967,15 @@ body, html {
   }
   .footer .footerCard {
     min-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .pagination {
+    display: none;
+  }
+  .quickContacts {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
